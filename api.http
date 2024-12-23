@@ -1,0 +1,25 @@
+# Create a new book
+POST http://localhost:8000/books/create/
+Content-Type: application/json
+
+{
+    "title": "O Símbolo Perdido",
+    "author": "Dan Brown",
+    "release_year": 2009,
+    "isbn": "1-552-15176-1"
+}
+
+###
+
+# List all books
+GET http://localhost:8000/books
+
+###
+
+# Get book by id
+GET http://localhost:8000/books/056c6437-4349-42a8-aa75-c50bfb66d423
+
+###
+
+# Remove book by id
+DELETE http://localhost:8000/books/delete/8057aa01-9022-4493-8f6b-a9cc78b01e07/
